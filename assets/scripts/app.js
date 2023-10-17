@@ -227,8 +227,13 @@ function healPlayerHandler(){
     endRound();
 }
 function printLogHandler(){
-    for(let i = 0;i < battleLog.length; i++){
+    /*for(let i = 0;i < battleLog.length; i++){
         console.log('------------');
+    }*/
+    let i =0;
+    for (const logEntry of battleLog ){
+        console.log(logEntry);
+        i++;
     }
     console.log(battleLog);
 }
